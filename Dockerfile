@@ -2,7 +2,7 @@
 FROM ruby:3.2-bookworm
 
 # Set the working directory
-WORKDIR /
+WORKDIR /app
 
 # Install MySQL client and development libraries
 RUN apt-get update -qq && \
