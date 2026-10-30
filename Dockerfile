@@ -1,5 +1,5 @@
 # Use an Ubuntu-based Ruby image
-FROM ruby:3.2-bullseye
+FROM ruby:3.2-bookworm
 
 # Set the working directory
 WORKDIR /
