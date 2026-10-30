@@ -27,6 +27,6 @@ RUN bundle config set --local without 'development test' && \
     rm -rf /usr/local/bundle/cache/*.gem
 
 # Run the migration and sync GitHub Repo Data scripts
-CMD ls && pwd && bundle exec rails runner "RetryableRake.db_create" && \
+CMD cd /app && bundle exec rails runner "RetryableRake.db_create" && \
     bundle exec rails runner "RetryableRake.db_migrate" && \
     bundle exec rails runner "SyncGithub.run!"
